@@ -1,3 +1,7 @@
+// Navbar
+// BannerBlue (Bonus)
+// Footer
+// BannerSignUp
 import Vue from 'vue'
 import App from './App.vue'
 
