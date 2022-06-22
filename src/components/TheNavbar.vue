@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div>
         <nav class="mnav d-flex justify-content-around align-items-center p-4">
             <div class="left-side">
                 <a class="navbar-brand" href="#">
@@ -9,7 +9,8 @@
             <div class="right-side">
                 <ul class="d-flex list-unstyled">
                     <li v-for="(link, i) in navLinks" :key="i">
-                    <a class="navbar-brand" :href="link.href"> {{link.name}} </a></li>
+                        <a class="navbar-brand" :href="link.href"> {{ link.name }} </a>
+                    </li>
 
                     <!-- <li><a class="navbar-brand" href="#">COMICS</a></li>
                     <li><a class="navbar-brand" href="#">MOVIES</a></li>
@@ -21,8 +22,12 @@
                     <li><a class="navbar-brand" href="#">NEWS</a></li>
                     <li><a class="navbar-brand" href="#">SHOP</a></li> -->
                 </ul>
+
             </div>
         </nav>
+        <div class="jumbotron">
+            <img src="img/jumbotron.jpg" alt="" srcset="" class="w-100 aspect-r">
+        </div>
     </div>
 </template>
 
@@ -49,27 +54,27 @@ export default {
                     name: "TV",
                     href: "#"
                 },
- {
+                {
                     name: "GAMES",
                     href: "#"
                 },
-                 {
+                {
                     name: "COLLECTIBLES",
                     href: "#"
                 },
-                 {
+                {
                     name: "VIDEOS",
                     href: "#"
                 },
-                 {
+                {
                     name: "FANS",
                     href: "#"
                 },
-                 {
+                {
                     name: "NEWS",
                     href: "#"
                 },
-                 {
+                {
                     name: "SHOP",
                     href: "#"
                 }
@@ -84,5 +89,8 @@ export default {
 ul li a {
     margin: 1rem;
     font-size: 15px;
+}
+.aspect-r{
+    aspect-ratio: 3;
 }
 </style>

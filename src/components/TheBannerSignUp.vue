@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="d-flex justify-content-around align-items-center">
+        <div class="d-flex justify-content-around align-items-center p-5">
             <div class="signUp">
                 <h5>SIGN-UP NOW!</h5>
             </div>

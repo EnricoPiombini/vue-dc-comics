@@ -1,12 +1,13 @@
 <template>
     <div>
-        <div class="row">
-            <div class="bg-image">
+        <div class="bg-image">
+            <div class="row justify-content-around">
+
                 <div class="col-4">
-                    <div class="inrow d-flex">
+                    <div class="inrow d-flex p-2 pt-5">
                         <div class="col-4">
-                            <div class="content">
-                                <h5>COMICS</h5>
+                            <div class="content text-end">
+                                <h5 class="text-white">COMICS</h5>
                                 <ul>
                                     <li class="list-unstyled"><a class="text-decoration-none" href="#">Characters</a>
                                     </li>
@@ -18,16 +19,17 @@
                                     <li class="list-unstyled"><a class="text-decoration-none" href="#">News</a></li>
 
 
-                                    <h5>SHOP</h5>
-                                    <li class="list-unstyled"><a class="text-decoration-none"  href="#">Shop DC</a></li>
-                                    <li class="list-unstyled"><a class="text-decoration-none"  href="#">Shop DC Collectibles</a></li>
+                                    <h5 class="text-white">SHOP</h5>
+                                    <li class="list-unstyled"><a class="text-decoration-none" href="#">Shop DC</a></li>
+                                    <li class="list-unstyled"><a class="text-decoration-none" href="#">Shop DC
+                                            Collectibles</a></li>
                                 </ul>
                             </div>
                         </div>
 
                         <div class="col-4">
-                            <div class="content text-initial">
-                                <h5>DC</h5>
+                            <div class="content text-end">
+                                <h5 class="text-white">DC</h5>
                                 <ul>
                                     <li class="list-unstyled"><a class="text-decoration-none" href="#">Terms of Use</a>
                                     </li>
@@ -53,24 +55,39 @@
                             </div>
                         </div>
                         <div class="col-4">
-                            <div class="content">
-                                <h5>SITES</h5>
+                            <div class="content text-end">
+                                <h5 class="text-white">SITES</h5>
                                 <ul>
-                                    <li class="list-unstyled"><a class="text-decoration-none"  href="#">DC</a></li>
-                                    <li class="list-unstyled"><a class="text-decoration-none"  href="#">Mad Magazine</a></li>
-                                    <li class="list-unstyled"><a class="text-decoration-none"  href="#">DC Kids</a></li>
-                                    <li class="list-unstyled"><a class="text-decoration-none"  href="#">DC Universe</a></li>
-                                    <li class="list-unstyled"><a class="text-decoration-none"  href="#">DC Power Visa</a></li>
+                                    <li class="list-unstyled"><a class="text-decoration-none" href="#">DC</a></li>
+                                    <li class="list-unstyled"><a class="text-decoration-none" href="#">Mad Magazine</a>
+                                    </li>
+                                    <li class="list-unstyled"><a class="text-decoration-none" href="#">DC Kids</a></li>
+                                    <li class="list-unstyled"><a class="text-decoration-none" href="#">DC Universe</a>
+                                    </li>
+                                    <li class="list-unstyled"><a class="text-decoration-none" href="#">DC Power Visa</a>
+                                    </li>
                                 </ul>
 
                             </div>
                         </div>
                     </div>
-               </div>
+                </div>
+
+                <div class="col-5">
+                    <div class="content">
+                        <img src="img/dc-logo-bg.png" alt="" srcset="" class="w-100">
+                    </div>
+
+
+                </div>
+
+
             </div>
+
         </div>
 
     </div>
+
 </template>
 
 
@@ -85,4 +102,7 @@ export default {
     background-image: url("/public/img/footer-bg.jpg");
 }
 
+ul li a {
+    color: lightslategray;
+}
 </style>
