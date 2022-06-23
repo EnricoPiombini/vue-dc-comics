@@ -9,7 +9,7 @@
             <div class="right-side">
                 <ul class="d-flex list-unstyled">
                     <li v-for="(link, i) in navLinks" :key="i">
-                        <a class="navbar-brand" :href="link.href"> {{ link.name }} </a>
+                        <a class="navbar-brand fw-bold" :href="link.href"> {{ link.name }} </a>
                     </li>
 
                     <!-- <li><a class="navbar-brand" href="#">COMICS</a></li>
@@ -91,6 +91,7 @@ ul li a {
     font-size: 15px;
 }
 .aspect-r{
-    aspect-ratio: 3;
+    aspect-ratio: 2;
+    object-fit: cover;
 }
 </style>

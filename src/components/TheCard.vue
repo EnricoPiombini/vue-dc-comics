@@ -1,21 +1,24 @@
 <template>
-<div class="section">
-  <div class="container p-5">
-    <div class="row justify-content-center">
-      <div class="col-2" v-for="(card, i) in moviesList" :key="i">
-        <div class="content">
-          <div class="thumb">
-            <img :src="card.thumb" alt="" srcset="" class="w-100">
-          </div>
-          <div class="title">
-            <h6 class="text-uppercase text-white p-2"> {{card.series}}  </h6>
+  <div class="section p-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-2" v-for="(card, i) in moviesList" :key="i">
+          <div class="content">
+            <div class="thumb">
+              <img :src="card.thumb" alt="" srcset="" class="w-100">
+            </div>
+            <div class="title">
+              <h6 class="text-uppercase text-white p-2 fw-bold"> {{ card.series }} </h6>
 
+            </div>
           </div>
         </div>
       </div>
+      <div class="text-center">
+        <button type="button" class="btn btn-primary">LOAD MORE</button>
+      </div>
     </div>
   </div>
-</div>
 </template>
 
 
@@ -108,9 +111,7 @@ export default {
 
 
 <style scoped>
-.section{
+.section {
   background-color: black;
 }
-
-
 </style>

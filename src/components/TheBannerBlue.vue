@@ -1,9 +1,9 @@
 <template>
     <div>
-        <div class="d-flex gap-5 justify-content-center bg-primary p-4">
+        <div class="d-flex gap-5 justify-content-center bg-primary p-5">
             <div class="d-flex align-items-center" v-for="(link, i) in bannerLinks" :key="i">
                 <img :src= "link.img"  alt="" srcset="" class="w-40">
-                <h6 class="text-white"> {{link.title}} </h6>
+                <h6 class="text-white p-3"> {{link.title}} </h6>
             </div>
             <!-- <div class="d-flex align-items-center">
                 <img src="img/buy-comics-merchandise.png" alt="" srcset="" class="w-40">
@@ -60,8 +60,12 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .w-40 {
     width: 40px;
+}
+
+h6{
+    font-size: 14px;
 }
 </style>
