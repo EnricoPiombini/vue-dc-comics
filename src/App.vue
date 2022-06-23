@@ -1,11 +1,12 @@
 <template>
   <div id="app">
-
-    <TheNavbar />
-    <TheCard />
-    <TheBannerBlue />
-    <TheFooter />
-    <TheBannerSignUp />
+    <div class="container">
+      <TheNavbar />
+      <TheCard />
+      <TheBannerBlue />
+      <TheFooter />
+      <TheBannerSignUp />
+    </div>
   </div>
 
 
